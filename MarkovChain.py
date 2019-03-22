@@ -60,7 +60,6 @@ for line in open(args.inputdata):
     str1 = line.split()
     inputdata.append(str1)
 print('input data load complete.')
-print(inputdata)
 
 print('\n')
 P_MarkovChain(inputdata, inside, outside)
