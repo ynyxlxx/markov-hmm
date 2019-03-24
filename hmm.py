@@ -94,11 +94,11 @@ def HMM(input_data,initial_1,initial_2):
     for x in range(1, len(record)):
 
         if record[x-1] != record[x]:
-            change_point = x
+            change_point = x-1
             print(str(change_point_start) + ' ' + str(change_point) + ' state' + str(record[x-1]))
             change_point_start = change_point + 1
         if x == len(record) - 1:
-            change_point = x + 2
+            change_point = x + 1
             print(str(change_point_start) + ' ' + str(change_point) + ' state' + str(record[x - 1]))
 
     return
